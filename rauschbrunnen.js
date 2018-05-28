@@ -1,8 +1,10 @@
 let karte = L.map("map", {
     fullscreenControl: true,
 });
+
+
 // Layer für Etappe12 und Start- Zielmarker hinzufügen
-let etappe12group = L.featureGroup().addTo(karte);
+let rauschbrunnen = L.featureGroup().addTo(karte);
 let overlayMarker = L.featureGroup().addTo(karte);
 
 // Grundkartenlayer mit OSM, basemap.at, Elektronische Karte Tirol (Sommer, Winter, Orthophoto jeweils mit Beschriftung)
@@ -91,28 +93,27 @@ let karteControl = L.control.layers({
    // "Elektronische Karte Tirol - Winter": tirisWinter,
    // "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
 }, {
-        "Innsbruck - Rauschbrunnen": etappe12group,
-        "Start / Ziel": overlayMarker,
+        "Innsbruck - Rauschbrunnen": overlayMarker,
     });
 
 karte.addControl(karteControl);
 karte.addLayer(myLayers.geolandbasemap);
 karte.setView([47.2688921, 11.3855037],13);
 
-let hoehenprofil = L.control.elevation({
+let hoehenProfil = L.control.elevation({
     position : "topright",
     theme : "steelblue-theme",
-    collapsed: false,
+    collapsed : false, 
 }).addTo(karte);
 
-let gpxTrack = new L.GPX("data/rauschbrunnen.gpx", {
+let gpxTrack = new L.GPX('data/rauschbrunnen.gpx', {
     async : true,
     marker_options : {
         startIconUrl : null,
         endIconUrl : null,
         shadowUrl : null,
     }
-}).addTo(etappe12group);
+}).addTo(karte);
 
 gpxTrack.on("loaded", function(evt) {
     console.log("get_distance",evt.target.get_distance().toFixed(0))
@@ -134,7 +135,8 @@ gpxTrack.on("loaded", function(evt) {
     karte.fitBounds(evt.target.getBounds());
 });
 
-
+gpxTrack.on('addline', function(evt){
+    hoehenProfil.addData(evt.line)});
 
 // Maßstabsleiste metrisch
 L.control.scale({           
@@ -145,7 +147,7 @@ L.control.scale({
 }).addTo(karte);
 
 // Start- und Endpunkte der Route als Marker mit Popup, Namen, Wikipedia Link und passenden Icons für Start/Ziel von https://mapicons.mapsmarker.com/
-L.marker([47.26963,11.36874],{
+L.marker([47.26913,11.39044],{
     icon : L.icon({
         iconUrl : 'images/start.png',
         iconAnchor : [16,37],
@@ -166,4 +168,4 @@ L.marker([47.27898,11.34689],{
 ).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
-//let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
+//let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group)

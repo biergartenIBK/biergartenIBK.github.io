@@ -1,15 +1,3 @@
-/*
-    Vorbereitung: GPX Track herunterladen und nach GeoJSON konvertieren
-    -------------------------------------------------------------------
-    Datenquelle https://www.data.gv.at/suche/?search-term=bike+trail+tirol&searchIn=catalog
-    Download Einzeletappen / Zur Ressource ...
-    Alle Dateien im unterverzeichnis data/ ablegen
-    Die .gpx Datei der eigenen Etappe als etappe00.gpx speichern
-    Die .gpx Datei über https://mapbox.github.io/togeojson/ in .geojson umwandeln und als etappe00.geojson speichern
-    Die etappe00.geojson Datei in ein Javascript Objekt umwandeln und als etappe00.geojson.js speichern
-
-    -> statt 00 natürlich die eigene Etappe (z.B. 01,02, ...25)
-*/
 
 // eine neue Leaflet Karte definieren
 //let myMap = L.map("map");
