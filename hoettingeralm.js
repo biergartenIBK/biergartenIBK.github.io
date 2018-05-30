@@ -102,7 +102,7 @@ karte.setView([47.2688921, 11.3855037],13);
 let hoehenprofil = L.control.elevation({
     position : "topright",
     theme : "steelblue-theme",
-    collapsed: true,
+    collapsed: false,
 }).addTo(karte);
 
 let gpxTrack = new L.GPX("data/hoettingeralm.gpx", {
