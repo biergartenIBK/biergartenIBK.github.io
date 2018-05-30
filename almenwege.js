@@ -139,10 +139,10 @@ let gpxTrack5 = new L.GPX("data/rumrumeralm.gpx", {
         color : "yellow",
     }
 }).addTo(etappe12group);
-let gpxTrack5 = new L.GPX("data/rumenzianhuette.gpx", {
+let gpxTrack6 = new L.GPX("data/rumenzianhuette.gpx", {
     async : true,
     polyline_options : {
-        color : "black",
+        color : "brown",
     }
 }).addTo(etappe12group);
 //gpxTrack.on("loaded", function(evt) {
@@ -263,6 +263,22 @@ L.marker([47.286124,11.400198],{
 }).addTo(overlayMarker);
 
 L.marker([47.292205,11.379444],{
+    icon : L.icon({
+        iconUrl : 'images/finish.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker);
+// Enzianhütte
+L.marker([47.29140000,11.44103000],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker);
+
+L.marker([47.29791000,11.41766000],{
     icon : L.icon({
         iconUrl : 'images/finish.png',
         iconAnchor : [16,37],
