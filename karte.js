@@ -106,7 +106,7 @@ let karteControl = L.control.layers({
             .bindPopup(
             `<h1>${bgd.name}</h1>
             <p>${bgd.adresse}</p>
-            <p>${bgd.link}</p>`
+            <p><a href='${bgd.link}'>Information</a></p>`
         ).addTo(bgdLayer);
       }
     // Frage nach bind.popups
@@ -114,7 +114,7 @@ let karteControl = L.control.layers({
     for (let ald of almendata) {
         L.marker([ald.lat, ald.lng])
         .bindPopup(`<h1>${ald.name}</h1>
-            <p>${ald.link}</p>
+            <p><a href='${ald.link}'>Information</a></p>
             `)
           .addTo(aldLayer);
     };

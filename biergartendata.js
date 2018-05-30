@@ -3,7 +3,7 @@ let biergartendata = [
       "lat":"47.263473","lng":"11.394978","name":"Theresienbraeu","adresse":"Maria_Theresien_Strasse 51-53","link":"http://www.theresienbraeu.com" 
     },
     {
-      "lat":"47.2767846","lng":"11.3991046","name":"Loewenhaus","adresse":"Rennweg 5","link": "<a href='http://www.loewenhaus.at'>Infos</a>"
+      "lat":"47.2767846","lng":"11.3991046","name":"Loewenhaus","adresse":"Rennweg 5","link": "http://www.loewenhaus.at"
     },
     {
       "lat":"47.2697068","lng":"11.3974477","name":"Hofgarten","adresse":"Rennweg 6a","link":"http://www.hofgarten.cafe" 
