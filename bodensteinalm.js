@@ -153,7 +153,8 @@ L.marker([47.28138,11.40589],{
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker).bindPopup(
-    '<h3>Mühlauer Brücke</h3><img src="images/muehlauer_bruecke.jpg"/>'
+    `<h3>Mühlauer Brücke</h3><img src="images/muehlauer_bruecke.jpg"/>
+    <p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Muehlauer_Bruecke_01.jpg/300px-Muehlauer_Bruecke_01.jpg">Bildquelle Foto</a></p>`
 );
 
 L.marker([47.30331,11.38748],{
@@ -163,7 +164,8 @@ L.marker([47.30331,11.38748],{
         popupAnchor : [0,-37],
     })
 }).bindPopup(
-    '<h3>Bodensteinalm</h3><img src="images/bodensteinalm.jpg"/>'
+    `<h3>Bodensteinalm</h3><img src="images/bodensteinalm.jpg"/>
+    <p><a href="https://www.innsbruck.info/emobilder/1000cx550c/30393/Bodensteinalm.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen

@@ -153,7 +153,8 @@ L.marker([47.2866,11.39928],{
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker).bindPopup(
-    '<h3>Hungerburg Parkplatz</h3><img src="images/hungerburgparkplatz.jpg"/>'
+    `<h3>Hungerburg Parkplatz</h3><img src="images/hungerburgparkplatz.jpg"/>
+    <p><a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
 );
 
 L.marker([47.29846,11.36704],{
@@ -163,7 +164,8 @@ L.marker([47.29846,11.36704],{
         popupAnchor : [0,-37],
     })
 }).bindPopup(
-    '<h3>Höttinger Alm</h3><img src="images/hoettingeralm.jpg"/>'
+    `<h3>Höttinger Alm</h3><img src="images/hoettingeralm.jpg"/>
+    <p><a href="https://www.almenrausch.at/uploads/tx_wctrip/Hoettingeralm_7748.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
