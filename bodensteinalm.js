@@ -102,7 +102,7 @@ karte.setView([47.2688921, 11.3855037],13);
 let hoehenprofil = L.control.elevation({
     position : "topright",
     theme : "steelblue-theme",
-    collapsed: false,
+    collapsed: true,
 }).addTo(karte);
 
 let gpxTrack = new L.GPX("data/bodensteinalm.gpx", {
@@ -153,7 +153,7 @@ L.marker([47.28138,11.40589],{
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker).bindPopup(
-    '<h3>Hungerburg Parkplatz</h3><img src="images/hungerburgparkplatz.jpg"/>'
+    '<h3>Mühlauer Brücke</h3><img src="images/muehlauer_bruecke.jpg"/>'
 );
 
 L.marker([47.30331,11.38748],{
@@ -163,7 +163,7 @@ L.marker([47.30331,11.38748],{
         popupAnchor : [0,-37],
     })
 }).bindPopup(
-    '<h3>Höttinger Alm</h3><img src="images/hoettingeralm.jpg"/>'
+    '<h3>Bodensteinalm</h3><img src="images/bodensteinalm.jpg"/>'
 ).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen

@@ -103,7 +103,7 @@ karte.setView([47.2688921, 11.3855037],13);
 let hoehenProfil = L.control.elevation({
     position : "topright",
     theme : "steelblue-theme",
-    collapsed : false, 
+    collapsed : true, 
 }).addTo(karte);
 
 let gpxTrack = new L.GPX('data/rauschbrunnen.gpx', {
