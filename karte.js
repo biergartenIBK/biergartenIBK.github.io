@@ -115,6 +115,8 @@ let karteControl = L.control.layers({
         L.marker([ald.lat, ald.lng])
         .bindPopup(`<h1>${ald.name}</h1>
             <p><a href='${ald.link}'>Information</a></p>
+            <p><img src='${ald.bild}'></p>
+            <p><a href='${ald.bildquelle}'>Bildquelle Foto</a></p>
             `)
           .addTo(aldLayer);
     };
