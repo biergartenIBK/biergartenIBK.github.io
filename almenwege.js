@@ -133,10 +133,16 @@ let gpxTrack4 = new L.GPX("data/rauschbrunnen.gpx", {
         color : "black",
     }
 }).addTo(etappe12group);
-let gpxTrack5 = new L.GPX("data/Rum-rumeralm.gpx", {
+let gpxTrack5 = new L.GPX("data/rumrumeralm.gpx", {
     async : true,
     polyline_options : {
         color : "yellow",
+    }
+}).addTo(etappe12group);
+let gpxTrack5 = new L.GPX("data/rumenzianhuette.gpx", {
+    async : true,
+    polyline_options : {
+        color : "black",
     }
 }).addTo(etappe12group);
 //gpxTrack.on("loaded", function(evt) {
