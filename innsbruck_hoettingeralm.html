@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Innsbruck - Höttinger Alm</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+    <script src="../js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+   
+    <script src="../js/leaflet.gpx/gpx.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="../js/d3/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="../js/leaflet.elevation/leaflet.elevation-0.0.4.css" />
+    <script type="text/javascript" src="../js/leaflet.elevation/leaflet.elevation-0.0.4.min.js"></script>
+    <script defer src="hoettingeralm.js"></script>
+
+</head>
+
+<body>
+    <div id="header2">
+        <h2 class="white">Biergarten auf der Alm</h2>
+        <h3 class="white">Verhungern und verdursten müss ma net!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -<!-- TODO: anpassen -->
+            <a href="https://sagamol.github.io/biketirol/index.html">https://sagamol.github.io/biketirol/</a><!-- TODO: anpassen -->
+        </p>
+    </div>
+
+    <hr />
+
+    
+    <div class="article">
+        <h1>Innsbruck - Höttinger Alm</h1>
+
+        <p>Urkundlich wird die Höttinger Alm erstmals 1441 erwähnt. Die Alm war einst eine wichtige Einrichtung für die Viehwirtschaft der Höttinger Bauern und auch der zur damaligen Zeit gleichberechtigten Innsbrucker Ackerbürgern. Das heutige Ziel vieler Wanderer, „Jogger“ und Radsportler geht auf ein Almgebäude zurück, das in den 60er Jahren errichtet wurde.</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Wegbeschreibung</h2>
+        <p>Oberhalb der Talstation der Nordkettenbahn geht es ein kurzes Stück Richtung Nordosten durch die Siedlung und bei der ersten Kreuzung links aufwärts in den Wald. Kurz darauf den Rosnerweg queren und wieder auf einem Waldweg aufwärts. Abwechselnd durch Mischwald und Lichtungen zur Arzler Alm (1.067 Meter). Von dort gehen wir in Richtung Westen den Forstweg entlang. Biegen Sie bei der ersten großen Kreuzung rechts ab und folgen Sie der Beschilderung mit traumhaften Talblick bis zur Höttinger Alm (1487 Meter) . </p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://www.innsbruck.info/.../hoettinger-alm-innsbruck.html">Stadt Innsbruck: Höttinger Alm</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Höttinger-Alm-208620002506080">Facebook: Höttinger Alm</a> 
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        
+        
+        
+
+        <table>
+            <tr>
+                <td>
+                    <a class="back" href="innsbruck_rauschbrunnen.html">
+                        <i class="fas fa-arrow-alt-circle-left"></i> Rauschbrunnen</a>
+                </td>
+                <td>
+                        <a class="up" href="indexUebersicht.html">
+                            <i class="fas fa-arrow-alt-circle-up"></i> Übersicht Almen auf der Nordkette</a>
+                    </td>
+                    <td>
+                    <a class="next" href="innsbruck_bodensteinalm.html">
+                        <i class="fas fa-arrow-alt-circle-right"></i> Bodensteinalm</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
