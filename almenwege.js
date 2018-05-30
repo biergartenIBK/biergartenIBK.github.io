@@ -6,8 +6,8 @@ let karte = L.map("map", {
 });
 // Layer für Etappe12 und Start- Zielmarker hinzufügen
 let etappe12group = L.featureGroup().addTo(karte);
-//let overlayMarker = L.featureGroup().addTo(karte);
-const overlayMarker = L.markerClusterGroup().addTo(karte)
+let overlayMarker = L.featureGroup().addTo(karte);
+//const overlayMarker = L.markerClusterGroup().addTo(karte)
 
 // Grundkartenlayer mit OSM, basemap.at, Elektronische Karte Tirol (Sommer, Winter, Orthophoto jeweils mit Beschriftung)
 const myLayers = {
@@ -115,7 +115,7 @@ let gpxTrack1 = new L.GPX("data/bodensteinalm.gpx", {
         color : "blue",
     }
 }).addTo(etappe12group);
-let gpxTrack2 = new L.GPX("data/umbrüggleralm.gpx", {
+let gpxTrack2 = new L.GPX("data/umbrueggleralm.gpx", {
     async : true,
     polyline_options : {
         color : "green",
@@ -215,8 +215,8 @@ L.marker([47.29846,11.36704],{
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker);
-
-L.marker([47.26963,11.36874],{
+// Rauschbrunnen
+L.marker([47.26913,11.39044],{
     icon : L.icon({
         iconUrl : 'images/start.png',
         iconAnchor : [16,37],

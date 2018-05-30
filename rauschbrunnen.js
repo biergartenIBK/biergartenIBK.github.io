@@ -154,7 +154,7 @@ L.marker([47.26913,11.39044],{
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker).bindPopup(
-    '<h3>Berchtoldshof</h3><img src="images/berchtoldshof.jpg"/>'
+    '<h3>Innkeller</h3><img src="images/innkeller.jpg"/>'
 );
 
 L.marker([47.27898,11.34689],{
