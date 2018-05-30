@@ -75,7 +75,7 @@ let biergartendata = [
       "lat":"47.2697855","lng":"11.358459","name":"Gasthaus Berchtoldshof","adresse":"Schneeburggasse 140","link":"https://www.berchtoldshof.com/" 
     },
     {
-      "lat":"47.2697855","lng":"11.358459","name":"Gasthof Buzihuette","adresse":"Berchtoldshofweg 14","link":"http://www.buzihuette.at" 
+      "lat":"47.2721546","lng":"11.3591399","name":"Gasthof Buzihuette","adresse":"Berchtoldshofweg 14","link":"http://www.buzihuette.at" 
     },
     {
       "lat":"47.2763926","lng":"11.3822642","name":"Gasthaus Planötzenhof","adresse":"Planötzenhofstraße 30","link":"http://www.planoetzenhof.at" 
@@ -88,5 +88,11 @@ let biergartendata = [
     },
     {
       "lat":"47.2860912","lng":"11.398091","name":"Cafe Pension Alpina","adresse":"Hungerburgweg 4","link":"http://www.cafe-pension-alpina.at" 
+    },
+    {
+      "lat":"47.2677564","lng":"11.3910974","name":"Cammerlander","adresse":"Innrain 2","link":"http://www.cammerlander.at/"
+    },
+    {
+      "lat":"47.2615781","lng":"11.3926908","name":"Glasmalerei","adresse":"Müllerstrasse 10","link":"https://at.speisekarte.menu/restaurants/innsbruck/restaurant-bar-glasmalerei"
     },
 ];
