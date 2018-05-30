@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Innsbruck - Umbrüggleralm</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet/leaflet.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+
+    <script src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+
+    <script src="../biergartenIBK.github.io/js/d3/d3.v3.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.min.js"></script>
+    
+    <script type="text/javascript" src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+    <script defer src="umbrueggleralm.js"></script>
+
+</head>
+
+<body>
+    <div id="header2">
+        <h2 class="white">Biergarten auf der Alm</h2>
+        <h3 class="white">Verhungern und verdursten müss ma net!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:marianne.abriel@student.uibk.ac.at">Marianne Abriel</a> -
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -
+            <a href="mailto:jan.stuebner@student.uibk.ac.at">Jan Stübner</a>
+            <a href="https://biergartenIBK.github.io/index.html">https://biergartenIBK.github.io/index.html</a>
+        </p>
+    </div>
+
+    <hr />
+
+    
+    <div class="article">
+        <h1>Innsbruck - Umbrüggleralm</h1>
+
+        <p>Die Stadt Innsbruck hat eine neue Alm: Zwischen 1979 und 2015 existierte die Umbrückler Alm gar nicht mehr. Das alte Almgebäude wurde abgetragen, da aufgrund der Baufälligkeit kein Pächter mehr gefunden wurde. Nach mehreren Planungen und Anläufen wurde schliesslich 2015 die neue Umbrückler Alm fertig gestellt. Sie befindet sich genau auf dem gleichen Platz der alten Alm. Die neue Umbrüggler Alm ist aber nicht mit der alten Alm vergleichbar: Es ist eine von einem Architekturbüro "durchgestylte" Alm, die sich möglichst gut in die Landschaft des Karwendel einbindet.</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Wegbeschreibung</h2>
+        <p>Wenige Höhenmeter sind ab der Hungerburg zu wandern. Hier zuerst auf dem Wanderweg 216 in Richtung Bodensteinhütte wandern, um dann links unter der Nordkettenbahn hindurch dem Wandersteig zur Umbrückler Alm zu folgen, ca. 300 Höhenmeter. </p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://www.innsbruck.info/infrastruktur/detail/infrastruktur/umbrueggler-alm-innsbruck.html">Stadt Innsbruck: Umbrüggleralm</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/umbrueggleralm">Facebook: Umbrüggleralm</a> 
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        
+        
+        
+
+        <table>
+            <tr>
+                <td>
+                    <a class="back" href="innsbruck_bodensteinalm.html">
+                        <i class="fas fa-arrow-alt-circle-left"></i> Bodensteinalm</a>
+                </td>
+                <td>
+                        <a class="up" href="indexUebersicht.html">
+                            <i class="fas fa-arrow-alt-circle-up"></i> Übersicht Almen auf der Nordkette</a>
+                    </td>
+                    <td>
+                    <a class="next" href="innsbruck_arzleralm.html">
+                        <i class="fas fa-arrow-alt-circle-right"></i> Arzler Alm</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
