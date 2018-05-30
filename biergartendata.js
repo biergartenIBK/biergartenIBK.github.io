@@ -72,7 +72,7 @@ let biergartendata = [
       "lat":"47.2711355","lng":"11.3732702","name":"Gasthaus Hoettinger Schießstand","adresse":"Schwabeneckweg 7","link":"https://www.facebook.com/gasthaus.hoettinger.schiessstand" 
     },
     {
-      "lat":"47.2697855","lng":"11.358459","name":"Gasthaus Berchtoldshof","adresse":"Schneeburggasse 140","link":"https://www.berchtoldshof.com/" 
+      "lat":"47.2701405","lng":"11.358619","name":"Gasthaus Berchtoldshof","adresse":"Schneeburggasse 140","link":"https://www.berchtoldshof.com/" 
     },
     {
       "lat":"47.2721546","lng":"11.3591399","name":"Gasthof Buzihuette","adresse":"Berchtoldshofweg 14","link":"http://www.buzihuette.at" 
