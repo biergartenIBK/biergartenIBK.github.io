@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Innsbruck - Bodensteinalm</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet/leaflet.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+
+    <script src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+
+    <script src="../biergartenIBK.github.io/js/d3/d3.v3.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.min.js"></script>
+    
+    <script type="text/javascript" src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+    <script defer src="bodensteinalm.js"></script>
+
+</head>
+
+<body>
+    <div id="header2">
+        <h2 class="white">Biergarten auf der Alm</h2>
+        <h3 class="white">Verhungern und verdursten müss ma net!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:marianne.abriel@student.uibk.ac.at">Marianne Abriel</a> -
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -
+            <a href="mailto:jan.stuebner@student.uibk.ac.at">Jan Stübner</a>
+            <a href="https://biergartenIBK.github.io/index.html">https://biergartenIBK.github.io/index.html</a>
+        </p>
+    </div>
+
+    <hr />
+
+    
+    <div class="article">
+        <h1>Innsbruck - Bodensteinalm</h1>
+
+        <p>Die Bodenstein Alm liegt auf einer Höhe von 1.661 Metern an der Nordkette direkt über Innsbruck. Der Ausblick über das Inntal bis ins Wipptal ist eindrucksvoll.</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Wegbeschreibung</h2>
+        <p>Gemütliche Auffahrt durch den Stadtteil Mühlau zum Rechenhofweg. Kurz etwas steiler am Steinbruchweg und ab dem Rosnerweg, später Arzler Almweg, wieder gemütlich weiter zur Arzler Alm. Bis fast zur Bodenstein Alm in gleichbleibender Steigung weiter - nur das letzte Stück bis kurz vor die Alm ist wieder ziemlich steil. Herrliche Ausblicke auf die Stadt Innsbruck, ins Wipptal und Teile vom Inntal und zur Nordkette.</p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://www.innsbruck.info/infrastruktur/detail/infrastruktur/bodenstein-alm-innsbruck.html">Stadt Innsbruck: Bodensteinalm</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/bodnstoana">Facebook: Bodensteinalm</a> 
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        
+        
+        
+
+        <table>
+            <tr>
+                <td>
+                    <a class="back" href="innsbruck_hoettingeralm.html">
+                        <i class="fas fa-arrow-alt-circle-left"></i> Höttinger Alm</a>
+                </td>
+                <td>
+                        <a class="up" href="indexUebersicht.html">
+                            <i class="fas fa-arrow-alt-circle-up"></i> Übersicht Almen auf der Nordkette</a>
+                    </td>
+                    <td>
+                    <a class="next" href="innsbruck_umbrueggleralm.html">
+                        <i class="fas fa-arrow-alt-circle-right"></i> Umbrüggleralm</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
