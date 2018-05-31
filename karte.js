@@ -112,7 +112,9 @@ let karteControl = L.control.layers({
             .bindPopup(
             `<h1>${bgd.name}</h1>
             <p>${bgd.adresse}</p>
-            <p><a href='${bgd.link}'>Information</a></p>`
+            <p><a href='${bgd.link}'>Information</a></p>
+            <p><img src='${bgd.bild}'></p>
+            <p><a href='${bgd.bildquelle}'>Bildquelle Foto</a></p>`
         ).addTo(bgdLayer);
       }
     // Frage nach bind.popups
@@ -128,9 +130,8 @@ let karteControl = L.control.layers({
         .bindPopup(`<h1>${ald.name}</h1>
             <p><a href='${ald.link}'>Information</a></p>
             <p><img src='${ald.bild}'></p>
-            <p><a href='${ald.bildquelle}'>Bildquelle Foto</a></p>
-            `)
-          .addTo(aldLayer);
+            <p><a href='${ald.bildquelle}'>Bildquelle Foto</a></p>`
+        ).addTo(aldLayer);
     };
 
     karte.fitBounds(bgdLayer.getBounds());
