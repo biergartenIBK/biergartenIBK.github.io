@@ -102,7 +102,13 @@ let karteControl = L.control.layers({
     }).addTo(karte);
 
     for (let bgd of biergartendata) {
-        L.marker([bgd.lat, bgd.lng])
+        L.marker([bgd.lat, bgd.lng], {
+            icon : L.icon ({
+                iconUrl : "images/beergarden.png",
+                iconAnchor : [16,37],
+                popupAnchor : [0,-37],
+            })
+        })
             .bindPopup(
             `<h1>${bgd.name}</h1>
             <p>${bgd.adresse}</p>
@@ -112,7 +118,13 @@ let karteControl = L.control.layers({
     // Frage nach bind.popups
     
     for (let ald of almendata) {
-        L.marker([ald.lat, ald.lng])
+        L.marker([ald.lat, ald.lng], {
+            icon : L.icon ({
+                iconUrl : "images/beergarden.png",
+                iconAnchor : [16,37],
+                popupAnchor : [0,-37],
+            })
+        })
         .bindPopup(`<h1>${ald.name}</h1>
             <p><a href='${ald.link}'>Information</a></p>
             <p><img src='${ald.bild}'></p>
