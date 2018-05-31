@@ -9,16 +9,16 @@ let biergartendata = [
       "lat":"47.2697068","lng":"11.3974477","name":"Hofgarten","adresse":"Rennweg 6a","link":"http://www.hofgarten.cafe","bild":"images/hofgarten.jpg","bildquelle":"https://sperrstunde.at/media/1370/dsc-2.jpg?anchor=center&amp;mode=crop&amp;quality=90&amp;width=800&amp;heightratio=0.5&amp;format=jpg&amp;slimmage=true&amp;rnd=130918009150000000" 
     },
     {
-      "lat":"47.265893","lng":"11.392105","name":"Goessers","adresse":"Adolf_Pichler_Platz 3","link":"http://www.goessers.at","bild":"","bildquelle":"" 
+      "lat":"47.265893","lng":"11.392105","name":"Goessers","adresse":"Adolf_Pichler_Platz 3","link":"http://www.goessers.at","bild":"images/goessers.jpg","bildquelle":"https://media-cdn.tripadvisor.com/media/photo-s/0c/cc/70/64/goessers.jpg" 
     },
     {
-      "lat":"47.2514265","lng":"11.4012491","name":"Bierstindl","adresse":"Klostergasse 6","link":"https://www.bierstindl.eu","bild":"","bildquelle":"" 
+      "lat":"47.2514265","lng":"11.4012491","name":"Bierstindl","adresse":"Klostergasse 6","link":"https://www.bierstindl.eu","bild":"images/bierstindl.jpg","bildquelle":"https://www.bing.com/th?id=OIP.IlzqoFW7vucsffzQZ3eFHQHaE8&pid=Api" 
     },
     {
-      "lat":"47.279924","lng":"11.4041895","name":"Restaurant Panorama","adresse":"Rennweg 39","link":"http://restaurant-panorama.info","bild":"","bildquelle":"" 
+      "lat":"47.279924","lng":"11.4041895","name":"Restaurant Panorama","adresse":"Rennweg 39","link":"http://restaurant-panorama.info","bild":"images/panorama.jpg","bildquelle":"http://www.gastrotour.cc/index.php?it=oesterreich/tirol/innsbruck-stadt/innsbruck/gastgarten-und-biergarten-restaurant-panorama/" 
     },
     {
-      "lat":"47.2685811","lng":"11.3936288","name":"","adresse":"Stiftskeller","link":"https://www.stiftskeller.eu/","bild":"","bildquelle":"" 
+      "lat":"47.2685811","lng":"11.3936288","name":"","adresse":"Stiftskeller","link":"https://www.stiftskeller.eu/","bild":"images/stiftskeller.jpg","bildquelle":"https://www.innsbruck.info/emobilder/x/15131/Biergarten.jpg" 
     },
     {
       "lat":"47.3063381","lng":"11.3797005","name":"Alpenlounge Seegrube","adresse":"","link":"https://www.nordkette.com/de/restaurant-seegrube.html","bild":"","bildquelle":"" 
