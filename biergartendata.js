@@ -21,22 +21,19 @@ let biergartendata = [
       "lat":"47.2685811","lng":"11.3936288","name":"","adresse":"Stiftskeller","link":"https://www.stiftskeller.eu/","bild":"images/stiftskeller.jpg","bildquelle":"https://www.innsbruck.info/emobilder/x/15131/Biergarten.jpg" 
     },
     {
-      "lat":"47.3063381","lng":"11.3797005","name":"Alpenlounge Seegrube","adresse":"","link":"https://www.nordkette.com/de/restaurant-seegrube.html","bild":"","bildquelle":"" 
+      "lat":"47.3063381","lng":"11.3797005","name":"Alpenlounge Seegrube","adresse":"","link":"https://www.nordkette.com/de/restaurant-seegrube.html","bild":"images/seegrube.jpg","bildquelle":"http://static2.bergfex.com/images/downsized/c0/6b1bf0eb4f4e75c0_5449ae654d5d4fe9.jpg" 
     },
     {
-      "lat":"47.2730955","lng":"11.3933872","name":"Gastgarten zur Eiche","adresse":"","link":"http://zureiche.at","bild":"","bildquelle":"" 
+      "lat":"47.2730955","lng":"11.3933872","name":"Gastgarten zur Eiche","adresse":"","link":"http://zureiche.at","bild":"images/eiche.jpg","bildquelle":"https://www.blog.tirol/wp-content/uploads/2016/08/ZurEiche-560x371.jpg" 
     },
     {
-      "lat":"47.2696596","lng":"11.3994036","name":"Kapuziner","adresse":"Kaiserjaegerstrasse 4a","link":"https://www.facebook.com/kapuziner6020","bild":"","bildquelle":"" 
+      "lat":"47.2696596","lng":"11.3994036","name":"Kapuziner","adresse":"Kaiserjaegerstrasse 4a","link":"https://www.facebook.com/kapuziner6020","bild":"images/kapuziner.jpg","bildquelle":"https://www.innsbruck.info/emobilder/1000cx550c/15917/Gastgarten.jpg" 
     },
     {
-      "lat":"47.2694643","lng":"11.3934397","name":"Fischerhaeusl","adresse":"Herrengasse 8","link":"http://www.fischerhaeusl.com","bild":"","bildquelle":"" 
+      "lat":"47.2694643","lng":"11.3934397","name":"Fischerhaeusl","adresse":"Herrengasse 8","link":"http://www.fischerhaeusl.com","bild":"images/fischerhaeusl.jpg","bildquelle":"https://all-inn.at/essen-und-trinken-gehen-in-innsbruck/restaurants-in-innsbruck/osterreichische-restaurants/fischerhaeusl/" 
     },
     {
-      "lat":"47.2677112","lng":"11.3936949","name":"Weisses Kreuz","adresse":"Herzog_Friedrich_Strasse 31","link":"http://www.weisseskreuz.at","bild":"","bildquelle":"" 
-    },
-    {
-      "lat":"47.2575182","lng":"11.427565","name":"Bierwirt","adresse":"Bichlweg 2","link":"http://www.bierwirt.com","bild":"","bildquelle":"" 
+      "lat":"47.2575182","lng":"11.427565","name":"Bierwirt","adresse":"Bichlweg 2","link":"http://www.bierwirt.com","bild":"images/bierwirt.jpg","bildquelle":"https://zvr-img.global.ssl.fastly.net/unsafe/trim/800x/images/entities/vrw/01210000-01219999/E1215067-foto466196.jpg" 
     },
     {
       "lat":"47.2490702","lng":"11.3675894","name":"Gasthaus Peterbruennl","adresse":"Voelser Strasse 25","link":"https://www.peterbruennl.at/","bild":"","bildquelle":"" 
