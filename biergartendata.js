@@ -3,10 +3,10 @@ let biergartendata = [
       "lat":"47.263473","lng":"11.394978","name":"Theresienbraeu","adresse":"Maria_Theresien_Strasse 51-53","link":"http://www.theresienbraeu.com","bild":"images/theresienbraeu.jpg","bildquelle":"http://www.theresienbraeu.com/images/speasyimagegallery/albums/1/images/dsc01639.gif" 
     },
     {
-      "lat":"47.2767846","lng":"11.3991046","name":"Loewenhaus","adresse":"Rennweg 5","link": "http://www.loewenhaus.at","bild":"","bildquelle":""
+      "lat":"47.2767846","lng":"11.3991046","name":"Loewenhaus","adresse":"Rennweg 5","link": "http://www.loewenhaus.at","bild":"images/loewenhaus.jpg","bildquelle":"http://www.loewenhaus.at/wp-content/uploadsgallery/gastgarten/bild_04.jpg"
     },
     {
-      "lat":"47.2697068","lng":"11.3974477","name":"Hofgarten","adresse":"Rennweg 6a","link":"http://www.hofgarten.cafe","bild":"","bildquelle":"" 
+      "lat":"47.2697068","lng":"11.3974477","name":"Hofgarten","adresse":"Rennweg 6a","link":"http://www.hofgarten.cafe","bild":"images/hofgarten.jpg","bildquelle":"https://sperrstunde.at/media/1370/dsc-2.jpg?anchor=center&amp;mode=crop&amp;quality=90&amp;width=800&amp;heightratio=0.5&amp;format=jpg&amp;slimmage=true&amp;rnd=130918009150000000" 
     },
     {
       "lat":"47.265893","lng":"11.392105","name":"Goessers","adresse":"Adolf_Pichler_Platz 3","link":"http://www.goessers.at","bild":"","bildquelle":"" 
