@@ -174,6 +174,7 @@ L.control.scale({
 }).addTo(karte);
 
 // Start- und Endpunkte der Route als Marker mit Popup, Namen, Wikipedia Link und passenden Icons für Start/Ziel von https://mapicons.mapsmarker.com/
+// Arzler Alm
 L.marker([47.286434,11.398509],{
     icon : L.icon({
         iconUrl : 'images/start.png',
@@ -184,12 +185,12 @@ L.marker([47.286434,11.398509],{
 
 L.marker([47.296362,11.403082],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker);
-
+// Bodensteinalm
 L.marker([47.28138,11.40589],{
     icon : L.icon({
         iconUrl : 'images/start.png',
@@ -200,12 +201,12 @@ L.marker([47.28138,11.40589],{
 
 L.marker([47.30331,11.38748],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [8,37],
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker);
-
+// Höttinger Alm
 L.marker([47.28657,11.39928],{
     icon : L.icon({
         iconUrl : 'images/start.png',
@@ -216,7 +217,7 @@ L.marker([47.28657,11.39928],{
 
 L.marker([47.29846,11.36704],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
@@ -232,12 +233,12 @@ L.marker([47.26913,11.39044],{
 
 L.marker([47.27898,11.34689],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker);
-
+// Rumer Alm
 L.marker([47.29166,11.44211],{
     icon : L.icon({
         iconUrl : 'images/start.png',
@@ -248,12 +249,12 @@ L.marker([47.29166,11.44211],{
 
 L.marker([47.30282,11.42091],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
 }).addTo(overlayMarker);
-
+// Umbrüggler Alm
 L.marker([47.286124,11.400198],{
     icon : L.icon({
         iconUrl : 'images/start.png',
@@ -264,7 +265,7 @@ L.marker([47.286124,11.400198],{
 
 L.marker([47.292205,11.379444],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
@@ -280,7 +281,7 @@ L.marker([47.29140000,11.44103000],{
 
 L.marker([47.29791000,11.41766000],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
