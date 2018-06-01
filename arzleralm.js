@@ -154,18 +154,18 @@ L.marker([47.286434,11.398509],{
     })
 }).addTo(overlayMarker).bindPopup(
     `<h3>Hungerburg Parkplatz</h3><img src="images/hungerburgparkplatz.jpg"/>
-    <p><a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
+    <p>Bild entnommen aus: <a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
 );
 
 L.marker([47.296362,11.403082],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
 }).bindPopup(
     `<h3>Arzler Alm</h3><img src="images/arzleralm.jpg"/>
-    <p><a href="http://www.arzleralm.at/data.cfm?vpath=teaserbilder/sommer-west2&dimensions=664x9999&cropmode=keepratio&noenlargement=no">Bildquelle Foto</a></p>`
+    <p>Bild entnommen aus: <a href="http://www.arzleralm.at/data.cfm?vpath=teaserbilder/sommer-west2&dimensions=664x9999&cropmode=keepratio&noenlargement=no">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen

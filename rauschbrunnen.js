@@ -155,18 +155,18 @@ L.marker([47.26913,11.39044],{
     })
 }).addTo(overlayMarker).bindPopup(
     `<h3>Innkeller</h3><img src="images/innkeller.jpg"/>
-    <p><a href="https://all-inn.at/nachtleben-bars-pub-clubs-innsbruck/bar-pub-club-in-innsbruck/innkeller/">Bildquelle Foto</a></p>`
+    <p>Bild entnommen aus: <a href="https://all-inn.at/nachtleben-bars-pub-clubs-innsbruck/bar-pub-club-in-innsbruck/innkeller/">Bildquelle Foto</a></p>`
 );
 
 L.marker([47.27898,11.34689],{
     icon : L.icon({
-        iconUrl : 'images/finish.png',
+        iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
 }).bindPopup(
     `<h3>Rauschbrunnen</h3><img src="images/rauschbrunnen.jpg"/>
-    <p><a href="https://www.mountaineers.at/files/styles/mega/public/images/wanderung/rauschbrunnen/rauschbrunnenWandern-1.jpg?itok=yVoXVmsv">Bildquelle Foto</a></p>`
+    <p>Bild entnommen aus: <a href="https://www.mountaineers.at/files/styles/mega/public/images/wanderung/rauschbrunnen/rauschbrunnenWandern-1.jpg?itok=yVoXVmsv">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
