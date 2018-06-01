@@ -36,34 +36,34 @@ let biergartendata = [
       "lat":"47.2575182","lng":"11.427565","name":"Bierwirt","adresse":"Bichlweg 2","link":"http://www.bierwirt.com","bild":"images/bierwirt.jpg","bildquelle":"https://zvr-img.global.ssl.fastly.net/unsafe/trim/800x/images/entities/vrw/01210000-01219999/E1215067-foto466196.jpg" 
     },
     {
-      "lat":"47.2490702","lng":"11.3675894","name":"Gasthaus Peterbruennl","adresse":"Voelser Strasse 25","link":"https://www.peterbruennl.at/","bild":"","bildquelle":"" 
+      "lat":"47.2490702","lng":"11.3675894","name":"Gasthaus Peterbruennl","adresse":"Voelser Strasse 25","link":"https://www.peterbruennl.at/","bild":"images/peterbruennl.jpg","bildquelle":"https://www.peterbruennl.at/bilder/" 
     },
     {
-      "lat":"47.2518797","lng":"11.4048398","name":"Gasthaus Bretterkeller","adresse":"Viller Berg 1","link":"https://www.gasthaus-bretterkeller.at","bild":"","bildquelle":"" 
+      "lat":"47.2518797","lng":"11.4048398","name":"Gasthaus Bretterkeller","adresse":"Viller Berg 1","link":"https://www.gasthaus-bretterkeller.at","bild":"images/bretterkeller.jpg","bildquelle":"https://www.innsbruck.info/it/infrastructures/dettagli/infrastruktur/restaurant-bretterkeller-innsbruck.html" 
     },
     {
-      "lat":"47.2641426","lng":"11.4258137","name":"Restaurant Martin","adresse":"Geyrstrasse 3","link":"http://www.cafe-restaurant-martin.at","bild":"","bildquelle":"" 
+      "lat":"47.2641426","lng":"11.4258137","name":"Restaurant Martin","adresse":"Geyrstrasse 3","link":"http://www.cafe-restaurant-martin.at","bild":"images/cafemartin.jpg","bildquelle":"http://www.cafe-restaurant-martin.at/uploads/tx_jpcarousel/005_02.jpg" 
     },
     {
-      "lat":"47.2555207","lng":"11.394446","name":"Gasthaus Riese Haymon","adresse":"Haymongasse 4","link":"https://www.riese-haymon.at/","bild":"","bildquelle":"" 
+      "lat":"47.2555207","lng":"11.394446","name":"Gasthaus Riese Haymon","adresse":"Haymongasse 4","link":"https://www.riese-haymon.at/","bild":"images/riesehaymon.jpg","bildquelle":"https://www.innsbruck.info/it/infrastructures/dettagli/infrastruktur/gasthaus-riese-haymon-innsbruck.html" 
     },
     {
-      "lat":"47.259905","lng":"11.396397","name":"Gasthaus Steneck","adresse":"Leopoldstrasse 21","link":"https://www.facebook.com/pages/Gasthaus-Steneck/188884881152417","bild":"","bildquelle":"" 
+      "lat":"47.259905","lng":"11.396397","name":"Gasthaus Steneck","adresse":"Leopoldstrasse 21","link":"https://www.facebook.com/pages/Gasthaus-Steneck/188884881152417","bild":"images/steneck.jpg","bildquelle":"https://www.yelp.at/biz/steneck-innsbruck" 
     },
     {
-      "lat":"47.2622246","lng":"11.3947435","name":"Vapiano","adresse":"Leopoldstrasse 1","link":"https://at.vapiano.com/de/restaurants/vapiano-innsbruck-2-leopoldstrasse-1/","bild":"","bildquelle":"" 
+      "lat":"47.2622246","lng":"11.3947435","name":"Vapiano","adresse":"Leopoldstrasse 1","link":"https://at.vapiano.com/de/restaurants/vapiano-innsbruck-2-leopoldstrasse-1/","bild":"images/vapiano.jpg","bildquelle":"https://all-inn.at/wp-content/uploads/2014/08/vapiano-innsbruck-zentrum-1-800x445.jpg" 
     },
     {
-      "lat":"47.2683536","lng":"11.3918077","name":"Ottoburg","adresse":"Herzog_Friedrich_Strasse 1","link":"http://www.ottoburg.at/de/","bild":"","bildquelle":"" 
+      "lat":"47.2683536","lng":"11.3918077","name":"Ottoburg","adresse":"Herzog_Friedrich_Strasse 1","link":"http://www.ottoburg.at/de/","bild":"images/ottoburg.jpg","bildquelle":"https://all-inn.at/essen-und-trinken-gehen-in-innsbruck/restaurants-in-innsbruck/osterreichische-restaurants/ottoburg/" 
     },
     {
-      "lat":"47.2684602","lng":"11.392082","name":"Piano Bar","adresse":"Herzog_Friedrich_Strasse 5","link":"https://www.cafepiano.at/","bild":"","bildquelle":"" 
+      "lat":"47.2684602","lng":"11.392082","name":"Piano Bar","adresse":"Herzog_Friedrich_Strasse 5","link":"https://www.cafepiano.at/","bild":"images/pianobar.jpg","bildquelle":"https://image.jimcdn.com/app/cms/image/transf/dimension=640x1024:format=jpg/path/s90c397517d25b71f/image/i816733fda0bf4dbb/version/1500548654/image.jpg" 
     },
     {
-      "lat":"47.268488","lng":"11.3926827","name":"Elferhaus","adresse":"Herzog_Friedrich_Strasse 11","link":"https://www.facebook.com/elferhaus","bild":"","bildquelle":"" 
+      "lat":"47.268488","lng":"11.3926827","name":"Elferhaus","adresse":"Herzog_Friedrich_Strasse 11","link":"https://www.facebook.com/elferhaus","bild":"images/elferhaus.jpg","bildquelle":"https://all-inn.at/wp-content/gallery/bars-elferhaus/elferhaus-innsbruck-zentrum-2.jpg" 
     },
     {
-      "lat":"47.2626761","lng":"11.3967122","name":"Stieglbraeu","adresse":"Wilhelm_Greil_Strasse 25","link":"http://www.stiegl-braeu-innsbruck.at/","bild":"","bildquelle":"" 
+      "lat":"47.2626761","lng":"11.3967122","name":"Stieglbraeu","adresse":"Wilhelm_Greil_Strasse 25","link":"http://www.stiegl-braeu-innsbruck.at/","bild":"images/stieglbraeu.jpg","bildquelle":"" 
     },
     {
       "lat":"47.2711355","lng":"11.3732702","name":"Gasthaus Hoettinger Schießstand","adresse":"Schwabeneckweg 7","link":"https://www.facebook.com/gasthaus.hoettinger.schiessstand","bild":"","bildquelle":"" 
