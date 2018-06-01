@@ -279,13 +279,15 @@ L.marker([47.29140000,11.44103000],{
     })
 }).addTo(overlayMarker);
 
-L.marker([47.29791000,11.41766000],{
-    icon : L.icon({
-        iconUrl : 'images/beergarden.png',
-        iconAnchor : [16,37],
-        popupAnchor : [0,-37],
-    })
-}).addTo(overlayMarker);
+
+    L.marker([47.29791000,11.41766000],{
+        icon : L.icon({
+            iconUrl : 'images/beergarden.png',
+            iconAnchor : [16,37],
+            popupAnchor : [0,-37],
+        })
+    }).addTo(overlayMarker);
+    
 karte.fitBounds(overlayMarker.getBounds());
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
