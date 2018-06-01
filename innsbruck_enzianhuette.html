@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Innsbruck - Enzianhütte</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet/leaflet.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+
+    <script src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+
+    <script src="../biergartenIBK.github.io/js/d3/d3.v3.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.min.js"></script>
+    
+    <script type="text/javascript" src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+    <script defer src="enzianhuette.js"></script>
+
+</head>
+
+<body>
+    <div id="header2">
+        <h2 class="white">Biergarten auf der Alm</h2>
+        <h3 class="white">Verhungern und verdursten müss ma net!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:marianne.abriel@student.uibk.ac.at">Marianne Abriel</a> -
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -
+            <a href="mailto:jan.stuebner@student.uibk.ac.at">Jan Stübner</a>
+            <a href="https://biergartenIBK.github.io/index.html">https://biergartenIBK.github.io/index.html</a>
+        </p>
+        <p>Bilder entnommen aus: <a href="https://pixabay.com/en/alpine-mountains-mountain-hut-3400788/">Bildquelle Foto</a> -
+            <a href="https://pixabay.com/en/froth-mug-beer-alcohol-beverage-307754/">Bildquelle Grafik</a>
+        </p>
+        </div>
+    <hr />
+
+    
+    <div class="article">
+        <h1>Innsbruck - Enzianhütte</h1>
+
+        <p>Die Enzianhütte gehört zur Gemeinde Rum und liegt schön in den Wäldern eingebettet  am Fuße der Rumer Spitze auf der  Südseite der Nordkette. Die sonnige Lage, aber auch die schönen Ausblicke begeistern die Sportler und Wanderer. Die Enzianhütte liegt auf 1041 Meter Seehöhe und ist ein schöner Ort zum Verweilen. Sie liegt im Wandergebiet von Rum bei Innsbruck und ist auf gepflegten, gut beschilderten Wanderwegen in etwa 50 Minuten erreichbar – auch wenn man nicht so gut zu Fuß ist.</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Wegbeschreibung</h2>
+        <p>Von der Parkplatzeinfahrt Richtung Norden auf Asphalt aufwärts. Kreuzung "Siebenwege" geradeaus aufwärts noch kurz auf Asphalt anschließend auf Schotter - "Rumeralmweg". Bei Weggabelung führt der linke Weg zur Enzianhütte.</p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://www.innsbruck.info/infrastruktur/detail/infrastruktur/enzianhuette-rum.html">Stadt Innsbruck: Enzianhütte</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/pages/Enzian-H%C3%BCtte/184758114943258">Facebook: Enzianhütte</a> 
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        
+        
+        
+
+        <table>
+            <tr>
+                <td>
+                    <a class="back" href="innsbruck_rumeralm.html">
+                        <i class="fas fa-arrow-alt-circle-left"></i> Rumer Alm</a>
+                </td>
+                <td>
+                        <a class="up" href="indexUebersicht.html">
+                            <i class="fas fa-arrow-alt-circle-up"></i> Übersicht Almen auf der Nordkette</a>
+                    </td>
+                    <td>
+                    <a class="next" href="innsbruck_rauschbrunnen.html">
+                        <i class="fas fa-arrow-alt-circle-right"></i> Rauschbrunnen</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>

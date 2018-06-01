@@ -261,9 +261,8 @@ L.marker([47.286124,11.400198],{
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
-}).addTo(overlayMark
-L.marker([47.292205,11er);
-.379444],{
+}).addTo(overlayMarker);
+L.marker([47.292205,11.379444],{
     icon : L.icon({
         iconUrl : 'images/beergarden.png',
         iconAnchor : [16,37],
