@@ -115,6 +115,30 @@ let gpxTrack = new L.GPX('data/rauschbrunnen.gpx', {
     }
 }).addTo(karte);
 
+let gpxTrack2 = new L.GPX('data/rauschbrunnen2.gpx', {
+    async : true,
+    polyline_options : {
+        color : "yellow",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(karte);
+
+let gpxTrack3 = new L.GPX('data/rauschbrunnen3.gpx', {
+    async : true,
+    polyline_options : {
+        color : "green",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(karte);
+
 gpxTrack.on("loaded", function(evt) {
     console.log("get_distance",evt.target.get_distance().toFixed(0))
     console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
@@ -132,12 +156,57 @@ gpxTrack.on("loaded", function(evt) {
     let abstieg = evt.target.get_elevation_loss().toFixed(0);
     document.getElementById("abstieg").innerHTML = abstieg;
 
-    karte.fitBounds(evt.target.getBounds());
+    //karte.fitBounds(evt.target.getBounds());
 });
 
 gpxTrack.on('addline', function(evt){
     hoehenProfil.addData(evt.line)});
 
+    gpxTrack2.on("loaded", function(evt) {
+        console.log("get_distance",evt.target.get_distance().toFixed(0))
+        console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
+        console.log("get_elevation_max",evt.target.get_elevation_max().toFixed(0))
+        console.log("get_elevation_gain",evt.target.get_elevation_gain().toFixed(0))
+        console.log("get_elevation_loss",evt.target.get_elevation_loss().toFixed(0))
+        let laenge = evt.target.get_distance().toFixed(0);
+        document.getElementById("laenge").innerHTML = laenge;
+        let tiefster_Punkt = evt.target.get_elevation_min().toFixed(0);
+        document.getElementById("tiefster_Punkt").innerHTML = tiefster_Punkt;
+        let hoechster_Punkt = evt.target.get_elevation_max().toFixed(0);
+        document.getElementById("hoechster_Punkt").innerHTML = hoechster_Punkt;
+        let aufstieg = evt.target.get_elevation_gain().toFixed(0);
+        document.getElementById("aufstieg").innerHTML = aufstieg;
+        let abstieg = evt.target.get_elevation_loss().toFixed(0);
+        document.getElementById("abstieg").innerHTML = abstieg;
+    
+        //karte.fitBounds(evt.target.getBounds());
+    });
+    
+    gpxTrack2.on('addline', function(evt){
+        hoehenProfil.addData(evt.line)});
+
+        gpxTrack3.on("loaded", function(evt) {
+            console.log("get_distance",evt.target.get_distance().toFixed(0))
+            console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
+            console.log("get_elevation_max",evt.target.get_elevation_max().toFixed(0))
+            console.log("get_elevation_gain",evt.target.get_elevation_gain().toFixed(0))
+            console.log("get_elevation_loss",evt.target.get_elevation_loss().toFixed(0))
+            let laenge = evt.target.get_distance().toFixed(0);
+            document.getElementById("laenge").innerHTML = laenge;
+            let tiefster_Punkt = evt.target.get_elevation_min().toFixed(0);
+            document.getElementById("tiefster_Punkt").innerHTML = tiefster_Punkt;
+            let hoechster_Punkt = evt.target.get_elevation_max().toFixed(0);
+            document.getElementById("hoechster_Punkt").innerHTML = hoechster_Punkt;
+            let aufstieg = evt.target.get_elevation_gain().toFixed(0);
+            document.getElementById("aufstieg").innerHTML = aufstieg;
+            let abstieg = evt.target.get_elevation_loss().toFixed(0);
+            document.getElementById("abstieg").innerHTML = abstieg;
+        
+            //karte.fitBounds(evt.target.getBounds());
+        });
+        
+        gpxTrack3.on('addline', function(evt){
+            hoehenProfil.addData(evt.line)});
 // Maßstabsleiste metrisch
 L.control.scale({           
     maxWidth : 200,        
@@ -158,6 +227,28 @@ L.marker([47.26913,11.39044],{
     <p>Bild entnommen aus: <a href="https://all-inn.at/nachtleben-bars-pub-clubs-innsbruck/bar-pub-club-in-innsbruck/innkeller/">Bildquelle Foto</a></p>`
 );
 
+L.marker([47.26963,11.36874],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Sadrachstraße</h3><img src="images/sadrachstrasse.jpg"/>
+    <p>Bild entnommen aus: <a href="https://www.outdooractive.com/de/wanderung/innsbruck-und-umgebung/sadrachstrasse-nach-rauschbrunnen/105317789/">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.273098000,11.327927000],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Innsbruck Kranebitten</h3><img src="images/klammstrasseunterfuehrung.jpg"/>
+    <p>Bild entnommen aus: <a href="https://www.bergfex.at/sommer/tirol/touren/wanderung/104430,kranebitter-klamm--nasse-wand--rauschbrunnen/">Bildquelle Foto</a></p>`
+);
+
 L.marker([47.27898,11.34689],{
     icon : L.icon({
         iconUrl : 'images/beergarden.png',
@@ -168,6 +259,8 @@ L.marker([47.27898,11.34689],{
     `<h3>Rauschbrunnen</h3><img src="images/rauschbrunnen.jpg"/>
     <p>Bild entnommen aus: <a href="https://www.mountaineers.at/files/styles/mega/public/images/wanderung/rauschbrunnen/rauschbrunnenWandern-1.jpg?itok=yVoXVmsv">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
+
+karte.fitBounds(overlayMarker.getBounds());
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group)
