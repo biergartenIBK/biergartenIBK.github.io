@@ -63,33 +63,33 @@ let biergartendata = [
       "lat":"47.268488","lng":"11.3926827","name":"Elferhaus","adresse":"Herzog_Friedrich_Strasse 11","link":"https://www.facebook.com/elferhaus","bild":"images/elferhaus.jpg","bildquelle":"https://all-inn.at/wp-content/gallery/bars-elferhaus/elferhaus-innsbruck-zentrum-2.jpg" 
     },
     {
-      "lat":"47.2626761","lng":"11.3967122","name":"Stieglbraeu","adresse":"Wilhelm_Greil_Strasse 25","link":"http://www.stiegl-braeu-innsbruck.at/","bild":"images/stieglbraeu.jpg","bildquelle":"" 
+      "lat":"47.2626761","lng":"11.3967122","name":"Stieglbraeu","adresse":"Wilhelm_Greil_Strasse 25","link":"http://www.stiegl-braeu-innsbruck.at/","bild":"images/stieglbraeu.jpg","bildquelle":"http://www.stiegl-braeu-innsbruck.at/images/Imagebilder/Stiegl-Gastgarten3.jpg" 
     },
     {
-      "lat":"47.2711355","lng":"11.3732702","name":"Gasthaus Hoettinger Schießstand","adresse":"Schwabeneckweg 7","link":"https://www.facebook.com/gasthaus.hoettinger.schiessstand","bild":"","bildquelle":"" 
+      "lat":"47.2711355","lng":"11.3732702","name":"Gasthaus Hoettinger Schießstand","adresse":"Schwabeneckweg 7","link":"https://www.facebook.com/gasthaus.hoettinger.schiessstand","bild":"images/schiessstand.jpg","bildquelle":"https://www.innsbruck.info/emobilder/1000cx550c/12663/Gasthaus-Schie%C3%9Fstand-Innsbruck.jpg" 
     },
     {
       "lat":"47.2701405","lng":"11.358619","name":"Gasthaus Berchtoldshof","adresse":"Schneeburggasse 140","link":"https://www.berchtoldshof.com/","bild":"images/Berchtoldshof.jpg","bildquelle":"https://www.innsbruck.info/emobilder/x/27309/Berchtoldshof.jpg" 
     },
     {
-      "lat":"47.2721546","lng":"11.3591399","name":"Gasthof Buzihuette","adresse":"Berchtoldshofweg 14","link":"http://www.buzihuette.at","bild":"","bildquelle":"" 
+      "lat":"47.2721546","lng":"11.3591399","name":"Gasthof Buzihuette","adresse":"Berchtoldshofweg 14","link":"http://www.buzihuette.at","bild":"images/buzihuette.jpg","bildquelle":"https://all-inn.at/essen-und-trinken-gehen-in-innsbruck/restaurants-in-innsbruck/osterreichische-restaurants/buzihuette/" 
     },
     {
-      "lat":"47.2763926","lng":"11.3822642","name":"Gasthaus Planötzenhof","adresse":"Planötzenhofstraße 30","link":"http://www.planoetzenhof.at","bild":"","bildquelle":"" 
+      "lat":"47.2763926","lng":"11.3822642","name":"Gasthaus Planötzenhof","adresse":"Planötzenhofstraße 30","link":"http://www.planoetzenhof.at","bild":"images/planoetzenhof.jpg","bildquelle":"http://www.planoetzenhof.at/uploads/media/planoetzenhof_aussen_02.jpg" 
     },
     {
-      "lat":"47.2774699","lng":"11.3866415","name":"Gasthof Oelberg","adresse":"Höhenstrasse 52","link":"http://www.oelberg.eu","bild":"","bildquelle":"" 
+      "lat":"47.2774699","lng":"11.3866415","name":"Gasthof Oelberg","adresse":"Höhenstrasse 52","link":"http://www.oelberg.eu","bild":"images/oelberg.jpg","bildquelle":"https://media-cdn.tripadvisor.com/media/photo-s/08/84/af/0a/olberg.jpg" 
     },
     {
-      "lat":"47.2835293","lng":"11.3794032","name":"Gasthof Gramarthof","adresse":"Gramartstraße 117","link":"http://www.gramarthof.com/","bild":"","bildquelle":"" 
+      "lat":"47.2835293","lng":"11.3794032","name":"Gasthof Gramarthof","adresse":"Gramartstraße 117","link":"http://www.gramarthof.com/","bild":"images/gramarthof.jpg","bildquelle":"http://www.gramarthof.com/site/assets/files/1/dscn2014_a9107ca92b.jpg" 
     },
     {
-      "lat":"47.2860912","lng":"11.398091","name":"Cafe Pension Alpina","adresse":"Hungerburgweg 4","link":"http://www.cafe-pension-alpina.at","bild":"","bildquelle":"" 
+      "lat":"47.2860912","lng":"11.398091","name":"Cafe Pension Alpina","adresse":"Hungerburgweg 4","link":"http://www.cafe-pension-alpina.at","bild":"images/alpina.jpg","bildquelle":"http://www.cafe-pension-alpina.at/en-gb/photos" 
     },
     {
-      "lat":"47.2677564","lng":"11.3910974","name":"Cammerlander","adresse":"Innrain 2","link":"http://www.cammerlander.at/","bild":"","bildquelle":""
+      "lat":"47.2677564","lng":"11.3910974","name":"Cammerlander","adresse":"Innrain 2","link":"http://www.cammerlander.at/","bild":"images/cammerlander.jpg","bildquelle":"https://all-inn.at/wp-content/uploads/ngg_featured/cafe-marktbar-innsbruck-2.jpg"
     },
     {
-      "lat":"47.2615781","lng":"11.3926908","name":"Glasmalerei","adresse":"Müllerstrasse 10","link":"https://at.speisekarte.menu/restaurants/innsbruck/restaurant-bar-glasmalerei","bild":"","bildquelle":""
+      "lat":"47.2615781","lng":"11.3926908","name":"Glasmalerei","adresse":"Müllerstrasse 10","link":"https://at.speisekarte.menu/restaurants/innsbruck/restaurant-bar-glasmalerei","bild":"images/glasmalerei.jpg","bildquelle":"https://www.nala-hotel.at/wp-content/uploads/2015/11/Bild2-1280x960.jpg"
     },
 ];
