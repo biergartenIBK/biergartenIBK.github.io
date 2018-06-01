@@ -107,6 +107,45 @@ let hoehenprofil = L.control.elevation({
 
 let gpxTrack = new L.GPX("data/arzleralm.gpx", {
     async : true,
+    polyline_options : {
+        color : "blue",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack2 = new L.GPX("data/arzleralm2.gpx", {
+    async : true,
+    polyline_options : {
+        color : "green",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack3 = new L.GPX("data/arzleralm3.gpx", {
+    async : true,
+    polyline_options : {
+        color : "red",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack4 = new L.GPX("data/arzleralm4.gpx", {
+    async : true,
+    polyline_options : {
+        color : "yellow",
+    },
     marker_options : {
         startIconUrl : null,
         endIconUrl : null,
@@ -131,7 +170,7 @@ gpxTrack.on("loaded", function(evt) {
     let abstieg = evt.target.get_elevation_loss().toFixed(0);
     document.getElementById("abstieg").innerHTML = abstieg;
 
-    karte.fitBounds(evt.target.getBounds());
+    // karte.fitBounds(evt.target.getBounds());
 });
 
 gpxTrack.on('addline', function(evt){
@@ -157,6 +196,39 @@ L.marker([47.286434,11.398509],{
     <p>Bild entnommen aus: <a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
 );
 
+L.marker([47.26965,11.36865],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Sadrachstrasse</h3><img src="images/sadrachstrasse.jpg"/>
+    <p>Bild entnommen aus: <a href="https://www.outdooractive.com/de/wanderung/innsbruck-und-umgebung/sadrachstrasse-nach-rauschbrunnen/105317789/">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.28346,11.41285],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Gasthof Koreth</h3><img src="images/koreth.jpg"/>
+    <p>Bild entnommen aus: <a href="https://www.innsbruck.info/fr/hebergements/hebergements/unterkunft/gasthof-koreth-innsbruck.html">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.28943,11.42615],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Schießstand Arzl</h3><img src="images/schiessstandarzl.jpg"/>
+    <p>Bild entnommen aus: <a href="https://www.almenrausch.at/uploads/tx_wctrip/DSC_9005_15959_01.jpg">Bildquelle Foto</a></p>`
+);
+
 L.marker([47.296362,11.403082],{
     icon : L.icon({
         iconUrl : 'images/beergarden.png',
@@ -168,5 +240,6 @@ L.marker([47.296362,11.403082],{
     <p>Bild entnommen aus: <a href="http://www.arzleralm.at/data.cfm?vpath=teaserbilder/sommer-west2&dimensions=664x9999&cropmode=keepratio&noenlargement=no">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
+karte.fitBounds(overlayMarker.getBounds());
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
