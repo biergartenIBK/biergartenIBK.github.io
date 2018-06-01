@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Innsbruck - Rumer Alm</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet/leaflet.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+
+    <script src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+
+    <script src="../biergartenIBK.github.io/js/d3/d3.v3.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.css" />
+    <script src="../biergartenIBK.github.io/js/leaflet.elevation/leaflet.elevation-0.0.4.min.js"></script>
+    
+    <script type="text/javascript" src="../biergartenIBK.github.io/js/leaflet.gpx/gpx.js"></script>
+    <script defer src="rumeralm.js"></script>
+
+</head>
+
+<body>
+    <div id="header2">
+        <h2 class="white">Biergarten auf der Alm</h2>
+        <h3 class="white">Verhungern und verdursten müss ma net!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:marianne.abriel@student.uibk.ac.at">Marianne Abriel</a> -
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -
+            <a href="mailto:jan.stuebner@student.uibk.ac.at">Jan Stübner</a>
+            <a href="https://biergartenIBK.github.io/index.html">https://biergartenIBK.github.io/index.html</a>
+        </p>
+        <p>Bilder entnommen aus: <a href="https://pixabay.com/en/alpine-mountains-mountain-hut-3400788/">Bildquelle Foto</a> -
+            <a href="https://pixabay.com/en/froth-mug-beer-alcohol-beverage-307754/">Bildquelle Grafik</a>
+        </p>
+        </div>
+    <hr />
+
+    
+    <div class="article">
+        <h1>Innsbruck - Rumer Alm</h1>
+
+        <p>Sehr schöne, hoch über Rum gelegene Alm mit herrlicher Aussicht ins Inntal. Ausgangspunkt für den Aufstieg oder die Auffahrt mit dem Mountainbike ist der Parkplatz "Naturpark Karwendel" bei Rum. Von hier beträgt die Gehzeit eineinhalb Stunden. Die Tour führt über eine Forststraße nach oben. Dadurch ist sie auch für Familien mit Kindern und ältere Personen gut erreichbar. Die Rumer Alm ist über die Route 513 an das Mountainbikenetz der Region Innsbruck angeschlossen. Restaurationsbetrieb mit warmer Küche.</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Wegbeschreibung</h2>
+        <p>Von der Parkplatzeinfahrt Richtung Norden auf Asphalt aufwärts. Kreuzung "Siebenwege" geradeaus aufwärts noch kurz auf Asphalt anschließend auf Schotter - "Rumeralmweg". Bei Weggabelung rechts aufwärts weiter (links führt der Weg zur Enzianhütte). Bei Weggabelung rechts aufwärts halten (links führt der Weg zur Arzler Alm). </p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://www.innsbruck.info/infrastruktur/detail/infrastruktur/rumer-alm-sommer-rum.html">Stadt Innsbruck: Rumer Alm</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/rumeralm">Facebook: Rumer Alm</a> 
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        
+        
+        
+
+        <table>
+            <tr>
+                <td>
+                    <a class="back" href="innsbruck_arzleralm.html">
+                        <i class="fas fa-arrow-alt-circle-left"></i> Arzler Alm</a>
+                </td>
+                <td>
+                        <a class="up" href="indexUebersicht.html">
+                            <i class="fas fa-arrow-alt-circle-up"></i> Übersicht Almen auf der Nordkette</a>
+                    </td>
+                    <td>
+                    <a class="next" href="innsbruck_enzianhuette.html">
+                        <i class="fas fa-arrow-alt-circle-right"></i> Enzianhütte</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
