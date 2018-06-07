@@ -145,6 +145,30 @@ let gpxTrack6 = new L.GPX("data/rumenzianhuette.gpx", {
         color : "brown",
     }
 }).addTo(etappe12group);
+
+gpxTrack.bindPopup(
+`<p><a href="innsbruck_arzleralm.html">Wegbeschreibung</a></p>`); 
+
+gpxTrack1.bindPopup(
+`<p><a href="innsbruck_bodensteinalm.html">Wegbeschreibung</a></p>`); 
+
+gpxTrack2.bindPopup(
+`<p><a href="innsbruck_umbrueggleralm.html">Wegbeschreibung</a></p>`); 
+
+gpxTrack3.bindPopup(
+`<p><a href="innsbruck_hoettingeralm.html">Wegbeschreibung</a></p>`); 
+
+gpxTrack4.bindPopup(
+`<p><a href="innsbruck_rauschbrunnen.html">Wegbeschreibung</a></p>`); 
+
+gpxTrack5.bindPopup(
+`<p><a href="innsbruck_rumrumeralm.html">Wegbeschreibung</a></p>`); 
+
+gpxTrack6.bindPopup(
+`<p><a href="innsbruck_rumenzianhuette.html">Wegbeschreibung</a></p>`); 
+
+
+
 //gpxTrack.on("loaded", function(evt) {
   //  console.log("get_distance",evt.target.get_distance().toFixed(0))
   //  console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
