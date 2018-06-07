@@ -112,7 +112,7 @@ let karteControl = L.control.layers({
             .bindPopup(
             `<h1>${bgd.name}</h1>
             <p>${bgd.adresse}</p>
-            <p><a href='${bgd.link}>Information</a></p>
+            <p><a href='${bgd.link}'>Information</a></p>
             <p><img src='${bgd.bild}'></p>
             <p>Bild entnommen aus: <a href='${bgd.bildquelle}'>Bildquelle Foto</a></p>`
         ).addTo(bgdLayer);
