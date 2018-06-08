@@ -97,7 +97,7 @@ let karteControl = L.control.layers({
 
 karte.addControl(karteControl);
 karte.addLayer(myLayers.geolandbasemap);
-karte.setView([47.2688921, 11.3855037],13);
+karte.setView([47.2688921, 11.3855037],12);
 
 let hoehenprofil = L.control.elevation({
     position : "topright",
@@ -143,7 +143,7 @@ gpxTrack.on("loaded", function(evt) {
     let abstieg = evt.target.get_elevation_loss().toFixed(0);
     document.getElementById("abstieg").innerHTML = abstieg;
 
-    karte.fitBounds(evt.target.getBounds());
+    //karte.fitBounds(evt.target.getBounds());
 });
 
 gpxTrack.on('addline', function(evt){
@@ -191,5 +191,6 @@ L.marker([47.30331,11.38748],{
     <p>Bild entnommen aus: <a href="https://www.innsbruck.info/emobilder/1000cx550c/30393/Bodensteinalm.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
+karte.fitBounds(etappe12group.getBounds());
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);

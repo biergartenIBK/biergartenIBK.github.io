@@ -98,7 +98,7 @@ let karteControl = L.control.layers({
 
 karte.addControl(karteControl);
 karte.addLayer(myLayers.geolandbasemap);
-karte.setView([47.2688921, 11.3855037],13);
+karte.setView([47.2688921, 11.3855037],12);
 
 let hoehenProfil = L.control.elevation({
     position : "topright",
