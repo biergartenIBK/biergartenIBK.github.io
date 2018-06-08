@@ -227,7 +227,7 @@ L.marker([47.292205,11.379444],{
     <p>Bild entnommen aus: <a href="https://www.almenrausch.at/uploads/tx_wctrip/header_5e89c4.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
-karte.fitBounds(overlayMarker.getBounds());
+karte.fitBounds(etappe12group.getBounds());
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
