@@ -114,6 +114,43 @@ let gpxTrack = new L.GPX("data/umbrueggleralm.gpx", {
     }
 }).addTo(etappe12group);
 
+let gpxTrack3 = new L.GPX("data/umbrueggleralm3.gpx", {
+    async : true,
+    polyline_options : {
+        color : "red",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack4 = new L.GPX("data/umbrueggleralm4.gpx", {
+    async : true,
+    polyline_options : {
+        color : "yellow",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack2 = new L.GPX("data/umbrueggleralm2.gpx", {
+    async : true,
+    polyline_options : {
+        color : "black",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+
 gpxTrack.on("loaded", function(evt) {
     console.log("get_distance",evt.target.get_distance().toFixed(0))
     console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
@@ -131,7 +168,7 @@ gpxTrack.on("loaded", function(evt) {
     let abstieg = evt.target.get_elevation_loss().toFixed(0);
     document.getElementById("abstieg").innerHTML = abstieg;
 
-    karte.fitBounds(evt.target.getBounds());
+    //karte.fitBounds(evt.target.getBounds());
 });
 
 gpxTrack.on('addline', function(evt){
@@ -157,6 +194,28 @@ L.marker([47.286124,11.400198],{
     <p>Bild entnommen aus: <a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
 );
 
+L.marker([47.2748016,11.3758528],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Planötzenhof</h3><img src="images/planoetzenhof.jpg"/>
+    <p>Bild entnommen aus: <a href="http://www.planoetzenhof.at/uploads/media/planoetzenhof_aussen_02.jpg">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.278807,11.399439],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Weiherburgsteg</h3><img src="images/weiherburgsteg.jpg"/>
+    <p>Bild entnommen aus: <a href="http://stockholmblog.cipixia.com/wp-content/uploads/2012/11/day05.innsbruck/1605px-Day05-Innsbruck-59.jpg">Bildquelle Foto</a></p>`
+);
+
 L.marker([47.292205,11.379444],{
     icon : L.icon({
         iconUrl : 'images/beergarden.png',
@@ -167,6 +226,8 @@ L.marker([47.292205,11.379444],{
     `<h3>Umbrüggleralm</h3><img src="images/umbrueggleralm.jpg"/>
     <p>Bild entnommen aus: <a href="https://www.almenrausch.at/uploads/tx_wctrip/header_5e89c4.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
+
+karte.fitBounds(overlayMarker.getBounds());
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);

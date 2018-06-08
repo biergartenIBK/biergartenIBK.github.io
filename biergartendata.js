@@ -75,7 +75,7 @@ let biergartendata = [
       "lat":"47.2721546","lng":"11.3591399","name":"Gasthof Buzihuette","adresse":"Berchtoldshofweg 14","link":"http://www.buzihuette.at","bild":"images/buzihuette.jpg","bildquelle":"https://all-inn.at/essen-und-trinken-gehen-in-innsbruck/restaurants-in-innsbruck/osterreichische-restaurants/buzihuette/" 
     },
     {
-      "lat":"47.2763926","lng":"11.3822642","name":"Gasthaus Planötzenhof","adresse":"Planötzenhofstraße 30","link":"http://www.planoetzenhof.at","bild":"images/planoetzenhof.jpg","bildquelle":"http://www.planoetzenhof.at/uploads/media/planoetzenhof_aussen_02.jpg" 
+      "lat":"47.2748016","lng":"11.3758528","name":"Gasthaus Planötzenhof","adresse":"Planötzenhofstraße 30","link":"http://www.planoetzenhof.at","bild":"images/planoetzenhof.jpg","bildquelle":"http://www.planoetzenhof.at/uploads/media/planoetzenhof_aussen_02.jpg" 
     },
     {
       "lat":"47.2774699","lng":"11.3866415","name":"Gasthof Oelberg","adresse":"Höhenstrasse 52","link":"http://www.oelberg.eu","bild":"images/oelberg.jpg","bildquelle":"https://media-cdn.tripadvisor.com/media/photo-s/08/84/af/0a/olberg.jpg" 
