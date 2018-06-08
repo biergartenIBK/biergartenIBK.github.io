@@ -114,6 +114,18 @@ let gpxTrack = new L.GPX("data/bodensteinalm.gpx", {
     }
 }).addTo(etappe12group);
 
+let gpxTrack2 = new L.GPX("data/bodensteinalm2.gpx", {
+    async : true,
+    polyline_options : {
+        color : "red",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
 gpxTrack.on("loaded", function(evt) {
     console.log("get_distance",evt.target.get_distance().toFixed(0))
     console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
@@ -155,6 +167,17 @@ L.marker([47.28138,11.40589],{
 }).addTo(overlayMarker).bindPopup(
     `<h3>Mühlauer Brücke</h3><img src="images/muehlauer_bruecke.jpg"/>
     <p>Bild entnommen aus: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Muehlauer_Bruecke_01.jpg/300px-Muehlauer_Bruecke_01.jpg">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.286507,11.398627],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Parkplatz Hungerburg</h3><img src="images/hungerburgparkplatz.jpg"/>
+    <p>Bild entnommen aus: <a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
 );
 
 L.marker([47.30331,11.38748],{
