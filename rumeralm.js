@@ -97,7 +97,7 @@ let karteControl = L.control.layers({
 
 karte.addControl(karteControl);
 karte.addLayer(myLayers.geolandbasemap);
-karte.setView([47.2688921, 11.3855037],13);
+karte.setView([47.2688921, 11.3855037],12);
 
 let hoehenprofil = L.control.elevation({
     position : "topright",
@@ -107,6 +107,54 @@ let hoehenprofil = L.control.elevation({
 
 let gpxTrack = new L.GPX("data/rumrumeralm.gpx", {
     async : true,
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack3 = new L.GPX("data/rumeralm3.gpx", {
+    async : true,
+    polyline_options : {
+        color : "red",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack2 = new L.GPX("data/rumeralm2.gpx", {
+    async : true,
+    polyline_options : {
+        color : "black",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack5 = new L.GPX("data/rumeralm5.gpx", {
+    async : true,
+    polyline_options : {
+        color : "green",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack4 = new L.GPX("data/rumeralm4.gpx", {
+    async : true,
+    polyline_options : {
+        color : "yellow",
+    },
     marker_options : {
         startIconUrl : null,
         endIconUrl : null,
@@ -131,7 +179,7 @@ gpxTrack.on("loaded", function(evt) {
     let abstieg = evt.target.get_elevation_loss().toFixed(0);
     document.getElementById("abstieg").innerHTML = abstieg;
 
-    karte.fitBounds(evt.target.getBounds());
+    //karte.fitBounds(evt.target.getBounds());
 });
 
 gpxTrack.on('addline', function(evt){
@@ -157,6 +205,28 @@ L.marker([47.29166,11.44211],{
     <p>Bild entnommen aus: <a href="https://www.innsbruck.info/infrastruktur/detail/infrastruktur/parkplatz-alpenpark-karwendel-rum.html">Bildquelle Foto</a></p>`
 );
 
+L.marker([47.28486,11.39572],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Hungerburg Ex-Spar</h3><img src="images/hungerburgspar.jpg"/>
+    <p>Bild entnommen aus: <a href="http://www.tt.com/wirtschaft/12114620-91/hungerburg-verliert-nahversorger.csp">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.28138,11.40589],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Karwendelparkplatz Rum</h3><img src="images/karwendelparkplatz.jpg"/>
+    <p>Bild entnommen aus: <a href="https://www.innsbruck.info/infrastruktur/detail/infrastruktur/parkplatz-alpenpark-karwendel-rum.html">Bildquelle Foto</a></p>`
+);
+
 L.marker([47.30282,11.42091],{
     icon : L.icon({
         iconUrl : 'images/beergarden.png',
@@ -168,5 +238,6 @@ L.marker([47.30282,11.42091],{
     <p>Bild entnommen aus: <a href="https://www.almenrausch.at/uploads/tx_wctrip/DSC_0082_02.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
+karte.fitBounds(etappe12group.getBounds());
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
