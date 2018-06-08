@@ -97,7 +97,7 @@ let karteControl = L.control.layers({
 
 karte.addControl(karteControl);
 karte.addLayer(myLayers.geolandbasemap);
-karte.setView([47.2688921, 11.3855037],13);
+karte.setView([47.2688921, 11.3855037],12);
 
 let hoehenprofil = L.control.elevation({
     position : "topright",
@@ -107,6 +107,30 @@ let hoehenprofil = L.control.elevation({
 
 let gpxTrack = new L.GPX("data/rumenzianhuette.gpx", {
     async : true,
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack2 = new L.GPX("data/enzianhuette2.gpx", {
+    async : true,
+    polyline_options : {
+        color : "green",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack3 = new L.GPX("data/enzianhuette3.gpx", {
+    async : true,
+    polyline_options : {
+        color : "yellow",
+    },
     marker_options : {
         startIconUrl : null,
         endIconUrl : null,
@@ -131,7 +155,7 @@ gpxTrack.on("loaded", function(evt) {
     let abstieg = evt.target.get_elevation_loss().toFixed(0);
     document.getElementById("abstieg").innerHTML = abstieg;
 
-    karte.fitBounds(evt.target.getBounds());
+    //karte.fitBounds(evt.target.getBounds());
 });
 
 gpxTrack.on('addline', function(evt){
@@ -157,6 +181,17 @@ L.marker([47.29140000,11.44103000],{
     <p>Bild entnommen aus: <a href="https://www.innsbruck.info/infrastruktur/detail/infrastruktur/parkplatz-alpenpark-karwendel-rum.html">Bildquelle Foto</a></p>`
 );
 
+L.marker([47.28585,11.39917],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Parkplatz Hungerburg</h3><img src="images/hungerburgparkplatz.jpg"/>
+    <p>Bild entnommen aus: <a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
+);
+
 L.marker([47.29791000,11.41766000],{
     icon : L.icon({
         iconUrl : 'images/beergarden.png',
@@ -168,5 +203,6 @@ L.marker([47.29791000,11.41766000],{
     <p>Bild entnommen aus: <a href="https://www.karwendel-urlaub.de/fileadmin/user_upload/Enzianhuette_Innsbruck_Karwendel.JPG">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
+karte.fitBounds(etappe12group.getBounds());
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
