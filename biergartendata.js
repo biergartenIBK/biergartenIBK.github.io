@@ -15,7 +15,7 @@ let biergartendata = [
       "lat":"47.2514265","lng":"11.4012491","name":"Bierstindl","adresse":"Klostergasse 6","link":"https://www.bierstindl.eu","bild":"images/bierstindl.jpg","bildquelle":"https://www.bing.com/th?id=OIP.IlzqoFW7vucsffzQZ3eFHQHaE8&pid=Api" 
     },
     {
-      "lat":"47.279924","lng":"11.4041895","name":"Restaurant Panorama","adresse":"Rennweg 39","link":"http://restaurant-panorama.info","bild":"images/panorama.jpg","bildquelle":"http://www.gastrotour.cc/index.php?it=oesterreich/tirol/innsbruck-stadt/innsbruck/gastgarten-und-biergarten-restaurant-panorama/" 
+      "lat":"47.279924","lng":"11.4041895","name":"Restaurant Panorama","adresse":"Rennweg 39","link":"http://restaurant-panorama.info","bild":"images/panorama.jpg","bildquelle":"https://all-inn.at/essen-und-trinken-gehen-in-innsbruck/biergarten-beergarden/restaurant-panorama/" 
     },
     {
       "lat":"47.2685811","lng":"11.3936288","name":"","adresse":"Stiftskeller","link":"https://www.stiftskeller.eu/","bild":"images/stiftskeller.jpg","bildquelle":"https://www.innsbruck.info/emobilder/x/15131/Biergarten.jpg" 
