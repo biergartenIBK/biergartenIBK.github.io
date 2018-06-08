@@ -97,7 +97,7 @@ let karteControl = L.control.layers({
 
 karte.addControl(karteControl);
 karte.addLayer(myLayers.geolandbasemap);
-karte.setView([47.2688921, 11.3855037],13);
+karte.setView([47.2688921, 11.3855037],12);
 
 let hoehenprofil = L.control.elevation({
     position : "topright",
@@ -107,6 +107,54 @@ let hoehenprofil = L.control.elevation({
 
 let gpxTrack = new L.GPX("data/hoettingeralm.gpx", {
     async : true,
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack3 = new L.GPX("data/hoettingeralm3.gpx", {
+    async : true,
+    polyline_options : {
+        color : "red",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack2 = new L.GPX("data/hoettingeralm2.gpx", {
+    async : true,
+    polyline_options : {
+        color : "black",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack5 = new L.GPX("data/hoettingeralm5.gpx", {
+    async : true,
+    polyline_options : {
+        color : "green",
+    },
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
+}).addTo(etappe12group);
+
+let gpxTrack4 = new L.GPX("data/hoettingeralm4.gpx", {
+    async : true,
+    polyline_options : {
+        color : "yellow",
+    },
     marker_options : {
         startIconUrl : null,
         endIconUrl : null,
@@ -131,7 +179,7 @@ gpxTrack.on("loaded", function(evt) {
     let abstieg = evt.target.get_elevation_loss().toFixed(0);
     document.getElementById("abstieg").innerHTML = abstieg;
 
-    karte.fitBounds(evt.target.getBounds());
+    //karte.fitBounds(evt.target.getBounds());
 });
 
 gpxTrack.on('addline', function(evt){
@@ -157,6 +205,39 @@ L.marker([47.2866,11.39928],{
     <p>Bild entnommen aus: <a href="http://www.skiresort.de/typo3temp/_processed_/da/a0/05/5f/3160c11116.jpg">Bildquelle Foto</a></p>`
 );
 
+L.marker([47.275150,11.374910],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Planötzenhof</h3><img src="images/planoetzenhof.jpg"/>
+    <p>Bild entnommen aus: <a href="http://www.planoetzenhof.at/uploads/media/planoetzenhof_aussen_02.jpg">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.306206,11.379365],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Seegrube</h3><img src="images/seegrube.jpg"/>
+    <p>Bild entnommen aus: <a href="http://static2.bergfex.com/images/downsized/c0/6b1bf0eb4f4e75c0_5449ae654d5d4fe9.jpg">Bildquelle Foto</a></p>`
+);
+
+L.marker([47.28917,11.42767],{
+    icon : L.icon({
+        iconUrl : 'images/start.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).addTo(overlayMarker).bindPopup(
+    `<h3>Schießstand Arzl</h3><img src="images/schiessstandarzl.jpg"/>
+    <p>Bild entnommen aus: <a href="https://www.almenrausch.at/uploads/tx_wctrip/DSC_9005_15959_01.jpg">Bildquelle Foto</a></p>`
+);
+
 L.marker([47.29846,11.36704],{
     icon : L.icon({
         iconUrl : 'images/beergarden.png',
@@ -168,5 +249,6 @@ L.marker([47.29846,11.36704],{
     <p>Bild entnommen aus: <a href="https://www.almenrausch.at/uploads/tx_wctrip/Hoettingeralm_7748.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
+karte.fitBounds(etappe12group.getBounds());
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
