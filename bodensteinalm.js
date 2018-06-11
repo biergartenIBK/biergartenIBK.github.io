@@ -60,7 +60,7 @@ let karteControl = L.control.layers({
 
 karte.addControl(karteControl);
 karte.addLayer(myLayers.osm);
-karte.setView([47.2688921, 11.3855037],12);
+karte.setView([47.2688921, 11.3855037],13);
 
 let hoehenprofil = L.control.elevation({
     position : "topright",
@@ -149,4 +149,4 @@ L.marker([47.30331,11.38748],{
     <p>Bild entnommen aus: <a href="https://www.innsbruck.info/emobilder/1000cx550c/30393/Bodensteinalm.jpg">Bildquelle Foto</a></p>`
 ).addTo(overlayMarker);
 
-karte.fitBounds(etappe12group.getBounds());
+karte.fitBounds(overlayMarker.getBounds());
