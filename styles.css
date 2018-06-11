@@ -18,7 +18,7 @@ body {
     height: 480px;
 }
 #header1 {
-    text-align: center;
+    text-align: left;
     background-color: dodgerblue;
     background-image: url('images/header1.jpg');
     background-repeat: no-repeat;
