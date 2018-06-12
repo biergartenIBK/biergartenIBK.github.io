@@ -55,7 +55,7 @@ let karteControl = L.control.layers({
     "Elektronische Karte Tirol - Sommer": tirisSommer,
     "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
 }, {
-        "Innsbruck - Rauschbrunnen": rauschbrunnen,
+        "Innsbruck - Rauschbrunnen": etappe12group,
         "Start / Ziel": overlayMarker,
     });
 
