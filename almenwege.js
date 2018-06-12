@@ -2,7 +2,7 @@
 let karte = L.map("map", {
     fullscreenControl: true,
 });
-// Layer für Etappe12 und Start- Zielmarker hinzufügen
+// Layer für GPX und Start- Zielmarker hinzufügen
 let etappe12group = L.featureGroup().addTo(karte);
 let overlayMarker = L.featureGroup().addTo(karte);
 
