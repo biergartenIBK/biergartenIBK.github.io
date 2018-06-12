@@ -3,7 +3,7 @@ let karte = L.map("map", {
 });
 
 // Layer für Etappe12 und Start- Zielmarker hinzufügen
-let rauschbrunnen = L.featureGroup().addTo(karte);
+let etappe12group = L.featureGroup().addTo(karte);
 let overlayMarker = L.featureGroup().addTo(karte);
 
 // Grundkartenlayer mit OSM, basemap.at, Elektronische Karte Tirol (Sommer, Winter, Orthophoto jeweils mit Beschriftung)
@@ -76,7 +76,7 @@ let gpxTrack = new L.GPX('data/rauschbrunnen.gpx', {
         endIconUrl : null,
         shadowUrl : null,
     }
-}).addTo(rauschbrunnen);
+}).addTo(etappe12group);
 
 let gpxTrack2 = new L.GPX('data/rauschbrunnen2.gpx', {
     async : true,
@@ -88,7 +88,7 @@ let gpxTrack2 = new L.GPX('data/rauschbrunnen2.gpx', {
         endIconUrl : null,
         shadowUrl : null,
     }
-}).addTo(rauschbrunnen);
+}).addTo(etappe12group);
 
 let gpxTrack3 = new L.GPX('data/rauschbrunnen3.gpx', {
     async : true,
@@ -100,7 +100,7 @@ let gpxTrack3 = new L.GPX('data/rauschbrunnen3.gpx', {
         endIconUrl : null,
         shadowUrl : null,
     }
-}).addTo(rauschbrunnen);
+}).addTo(etappe12group);
 
 gpxTrack.on("loaded", function(evt) {
     let laenge = evt.target.get_distance().toFixed(0);
